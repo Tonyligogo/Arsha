@@ -1,0 +1,56 @@
+.aboutContainer{
+    padding: 3rem 7rem;
+}
+.aboutHeading{
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+.aboutHeading h2{
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #37517e;
+}
+.aboutHeading span{
+    display: block;
+    margin-inline: auto;
+    width: 80%;
+    height: 1px;
+    background: lightgray;
+    position: relative;
+}
+.aboutHeading span small{
+    display: block;
+    margin-inline: auto;
+    background: #47b2e4;
+    position: absolute;
+    height: 4px;
+    top: -1.5px;
+    width: 30%;
+    left: 35%;
+}
+.aboutContainer .aboutContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    font-weight: 300;
+    gap: 1rem;
+}
+.aboutContainer .aboutContent .left ul{
+    padding: 0;
+}
+.aboutContainer .aboutContent .left ul li{
+    padding-top: 10px;
+}
+
+.aboutContainer .aboutContent .right .rectangular{
+    color: #47b2e4;
+    border-radius: 4px;
+    padding: 8px 32px;
+    margin-top: 14px;
+}
+.aboutContainer .aboutContent .right .rectangular:hover{
+    color: white;
+}

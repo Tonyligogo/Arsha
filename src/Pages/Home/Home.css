@@ -1,0 +1,113 @@
+.homeContainer{
+    width: 100%;
+    height: 70svh;
+    background: #37517e;
+    color: white;
+}
+header{
+    background: #37517e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding-block: 1rem;
+}
+.header{
+    padding-inline: 7rem;
+}
+.active{
+    transition: all 800ms ease;
+    background: rgba(40, 58, 90, 0.9);
+    padding-inline: 7rem;
+}
+.businessName{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+header ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+header ul li:hover{
+    cursor: pointer;
+    color: #47b2e4;
+}
+.btnOutline{
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.btnOutline:hover{
+  background: #31a9e1;
+  color: white !important;
+}
+.homeContainer .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 7rem;
+    align-items: center;
+}
+.homeContainer .main .left h2{
+    margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.homeContainer .main .left p{
+    color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+.homeContainer .main .left .ctaButtons > :first-child{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    background: #31a9e1;
+    font-weight: 600;
+    color: white;
+    margin-right: 20px;
+    transition: all 300ms ease-in-out;
+}
+.homeContainer .main .left .ctaButtons > :first-child:hover{
+    background: #209dd8;
+}
+.homeContainer .main .right img{
+  animation-name: up-down;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes up-down{
+    0%{transform: translateY(0)}
+    25%{transform: translateY(-6px)}
+    50%{transform: translateY(0)}
+    75%{transform: translateY(6px)}
+    100%{transform: translateY(0)}
+}
+.trustedBy{
+    background-color: #f3f5fa;
+    padding-inline: 7rem;
+    height: calc(100svh - 80svh);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trustedBy img{
+    display: inline-block;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+

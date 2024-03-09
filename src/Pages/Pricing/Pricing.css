@@ -1,0 +1,67 @@
+.pricingContainer{
+    padding: 3rem 7rem;
+}
+.packages{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.package{
+    padding: 40px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.package h4{
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #37517e
+}
+.package span.price{
+    color: #37517e;
+    font-size: 48px;
+    display: block;
+}
+.package span.price sup{
+    font-size: 30px;
+}
+.package span.timeSpan{
+    display: block;
+    font-size: 20px;
+    color: #47b2e4;
+    margin-bottom: 25px;
+}
+.package ul{
+    padding: 0;
+}
+.package ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    color: #999;
+    font-size: 20px;
+}
+.package ul li.lineThrough{
+    color: #ccc;
+    text-decoration: line-through;
+}
+.btnOutline.btnOutline{
+    color: #47b2e4;
+    border-width: 1px;
+    padding: 12px 35px;
+    margin-top: 20px;
+
+}
+.btnOutline.btnOutline:hover{
+    background: #47b2e4;
+    color: #fff;
+}
+.package.activePackage{
+    border-top: 4px solid #47b2e4;
+}
+.package.activePackage button{
+    background: #47b2e4;
+    color: #fff;
+}
